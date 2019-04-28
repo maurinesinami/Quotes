@@ -1,6 +1,10 @@
+<div></div>
 <h1>Quotes</h1>
 <div class="container">
   <div class="row">
 <app-quote-form></app-quote-form>
+<button style="float:left" (click)='thumbsUp()' class="btn btn-warning btn-lg">Like {{upvote}} </button>
+<button style="float:right" (click)='thumbsDown()' class="btn btn-warning btn-lg">Dislike {{downvote}}</button>
+
 </div>
 </div>
