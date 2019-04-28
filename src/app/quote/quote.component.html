@@ -1,10 +1,18 @@
-<div></div>
-<h1>Quotes</h1>
 <div class="container">
-  <div class="row">
-<app-quote-form></app-quote-form>
-<button style="float:left" (click)='thumbsUp()' class="btn btn-warning btn-lg">Like {{upvote}} </button>
-<button style="float:right" (click)='thumbsDown()' class="btn btn-warning btn-lg">Dislike {{downvote}}</button>
+    
+<div class="row">
+    <div class="col-md-6">
+    <div class="jumbotron">
+        <app-quote-form></app-quote-form>
+    </div>
 
+  <div class="row">
+<div class="col-md-6">
+<button style="float:right" (click)='thumbsUp()' class="btn btn-info btn-lg">Like {{upvote}} </button>
+<button style="float:right" (click)='thumbsDown()' class="btn btn-info btn-lg">Dislike {{downvote}}</button>
+
+</div>
+</div>
+<button type="submit" class="btn btn-success btn-lg">Add Quote</button>
 </div>
 </div>
