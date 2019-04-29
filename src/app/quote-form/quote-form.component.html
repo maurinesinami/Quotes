@@ -14,7 +14,7 @@
   <br> 
   
   <textarea type="text" class="form-control"[(ngModel)]="newQuote.quoteText"name="name"#name="ngModel" id="description" placeholder="Enter quote here" required></textarea>
-  <div [hidden]="quote.valid || quote.pristine" ></div>
+  
       
 
   <br><br>
@@ -26,17 +26,17 @@
     <label for="author">Author:</label>
     <br> 
     <input type="text" class="form-control" id="author"placeholder="Name of author"[(ngModel)]="newQuote.author" name="author" #author="ngModel"required>
-    <div [hidden]="quote.valid || quote.pristine" >
+
          
 <br>
- </div>
+ 
 
 </div>
 <div class="form-group">
               <label for="name">Your Name:</label>
               <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" placeholder="name"[(ngModel)]="newQuote.name" name="name" #name="ngModel"required>
-              <div [hidden]="name.valid || name.pristine" >
-</div>
+              
+
 </div>
 <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
 
