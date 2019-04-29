@@ -10,11 +10,11 @@
   <br> 
   
   <textarea type="text" class="form-control"[(ngModel)]="newQuote.quoteText"name="name"#name="ngModel" id="description" rows="10"cols="30"placeholder="Enter quote here" required></textarea>
-  <div [hidden]="quote.valid || quote.pristine" >
+  <div [hidden]="quote.valid || quote.pristine" ></div>
       
 
   <br><br>
-  </div>
+  
   </div>
   
     
@@ -34,16 +34,7 @@
               <div [hidden]="name.valid || name.pristine" >
 </div>
 </div>
-<ul>
-      <div *ngFor='let quote of quotes;let i = index'>
-          
-          
-         
-         <app-quote *ngIf="quote.showQuote" [quote]='quote'></app-quote>
-         </div>
-         </ul> 
 
-<button  (click)='toogleDetails(i)'>Toogle Details</button>
 
 </form>
 </div>

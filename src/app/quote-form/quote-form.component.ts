@@ -13,8 +13,6 @@ export class QuoteFormComponent implements OnInit {
   submitQuote(){
     this.addQuote.emit(this.newQuote);
   }
-  //toogleDetails(index){
-       //this.quote[index].showQuote = !this.quote[index].showQuote;
   
   constructor() { }
 

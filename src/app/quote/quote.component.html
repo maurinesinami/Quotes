@@ -6,25 +6,16 @@
       
       <app-quote-form></app-quote-form> 
     </div>
-    <div class="row">
-      <div class="card" style="width:100%" > 
-      <div class="w-100">
-       <div class="col">
-       
-         <ul>
-         <li >{{quote.name}}</li> 
-         <li >{{quote.author}}</li> 
-         <li >{{quote.quoteText}}</li> 
-         </ul> 
-         </div>
-         </div>
-         </div>
 
+<div class="card" style="width:100%">
   <div class="row">
 <div class="col-md-6">
+   
+
 <button style="float:right" (click)='thumbsUp()' class="btn btn-info btn-lg">Like {{upvote}} </button>
 <button style="float:right" (click)='thumbsDown()' class="btn btn-info btn-lg">Dislike {{downvote}}</button>
 
+</div>
 </div>
 </div>
 <button type="submit" class="btn btn-success btn-lg">Add Quote</button>

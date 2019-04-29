@@ -7,6 +7,13 @@ import { Quote } from './quote'
 })
 export class AppComponent {
   
-  title = 'Quotes';
+quotes=[
+  new Quote('starve your distractions,feed your focus','maurine','sinami',0,0)
+]
+addQuote(quote){
+
+  this.quotes.push(quote)
+ }
+
   
 }
