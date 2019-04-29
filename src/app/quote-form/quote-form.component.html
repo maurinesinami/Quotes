@@ -34,5 +34,16 @@
               <div [hidden]="name.valid || name.pristine" >
 </div>
 </div>
+<ul>
+      <div *ngFor='let quote of quotes;let i = index'>
+          
+          
+         
+         <app-quote *ngIf="quote.showQuote" [quote]='quote'></app-quote>
+         </div>
+         </ul> 
+
+<button  (click)='toogleDetails(i)'>Toogle Details</button>
+
 </form>
 </div>

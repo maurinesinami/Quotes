@@ -8,8 +8,8 @@ import { Quote } from '../quote'
 export class QuoteComponent implements OnInit {
   @Input() quote:Quote
   @Output() like= new EventEmitter<boolean>();
-    // toogleDetails(index){
-    //   this.quotes[index].showQuote = !this.quotes[index].showQuote;
+    //toogleDetails(index){
+       //this.quote[index].showQuote = !this.quote[index].showQuote;
   
   
     
@@ -25,7 +25,7 @@ export class QuoteComponent implements OnInit {
     this.downvote++;
   }
 
-
+  constructor() { }
   ngOnInit() {
   }
 
