@@ -11,6 +11,8 @@ export class QuoteFormComponent implements OnInit {
   @Output() addQuote=new EventEmitter<Quote>();
 
   submitQuote(){
+    let quoteLength =this.newQuote.name.length;
+
     this.addQuote.emit(this.newQuote);
   }
   

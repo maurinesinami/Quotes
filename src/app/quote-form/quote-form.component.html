@@ -10,7 +10,7 @@
   <label for="quote">Quote</label>
   <br> 
   
-  <textarea type="text" class="form-control"[(ngModel)]="newQuote.quoteText"name="name"#name="ngModel" id="description" rows="10"cols="30"placeholder="Enter quote here" required></textarea>
+  <textarea type="text" class="form-control"[(ngModel)]="newQuote.quoteText"name="name"#name="ngModel" id="description" placeholder="Enter quote here" required></textarea>
   <div [hidden]="quote.valid || quote.pristine" ></div>
       
 
@@ -35,6 +35,8 @@
               <div [hidden]="name.valid || name.pristine" >
 </div>
 </div>
+<button type="submit" class="btn btn-success btn-lg">Add Quote</button>
+
 
 
 </form>
