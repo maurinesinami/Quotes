@@ -1,5 +1,6 @@
 body{
     background-image: url("../quote.jpg");
+    background-attachment: fixed;
 }
 .quote{
     border:1px solid black;
