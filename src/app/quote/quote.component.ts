@@ -11,7 +11,7 @@ export class QuoteComponent implements OnInit {
     //toogleDetails(index){
        //this.quote[index].showQuote = !this.quote[index].showQuote;
        quotes=[
-        new Quote('starve your distractions,feed your focus','maurine','sinami',0,0,new Date(2019,3,29))
+        new Quote('Starve your distractions,feed your focus','maurine','sinami',0,0,new Date(2019,3,29))
       ]
       addQuote(quote){
         let quoteLength = this.quotes.length;
