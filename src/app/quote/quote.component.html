@@ -4,19 +4,23 @@
     <div class="col-md-6">
     <div class="jumbotron">
       
-      <app-quote-form></app-quote-form> 
+      <app-quote-form ></app-quote-form> 
     </div>
 
 <div class="card" style="width:100%">
   <div class="row">
 <div class="col-md-6">
-   
+  <div class= "quote" *ngFor='let quote of quotes;let i =index'>
+   <p>{{quote.quoteText}}</p>
+   <p>{{quote.author}}</p>
+   <p>{{quote.name}}</p>
+</div>
 
-<button style="float:right" (click)='thumbsUp()' class="btn btn-info btn-lg">Like {{upvote}} </button>
-<button style="float:right" (click)='thumbsDown()' class="btn btn-info btn-lg">Dislike {{downvote}}</button>
 
 </div>
 </div>
+<button style="float:right" (click)='thumbsUp()' class="btn btn-info btn">Like {{upvote}} </button>
+<button style="float:right" (click)='thumbsDown()' class="btn btn-info btn">Dislike {{downvote}}</button>
 </div>
 <button type="submit" class="btn btn-success btn-lg">Add Quote</button>
 

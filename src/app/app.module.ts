@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+
 import { QuoteMadeComponent } from './quote-made/quote-made.component';
 
 @NgModule({
@@ -15,7 +15,7 @@ import { QuoteMadeComponent } from './quote-made/quote-made.component';
     
     QuoteFormComponent,
     
-    QuoteDetailsComponent,
+   
     
     QuoteMadeComponent
 

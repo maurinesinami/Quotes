@@ -10,7 +10,16 @@ export class QuoteComponent implements OnInit {
   @Output() like= new EventEmitter<boolean>();
     //toogleDetails(index){
        //this.quote[index].showQuote = !this.quote[index].showQuote;
-  
+       quotes=[
+        new Quote('starve your distractions,feed your focus','maurine','sinami',0,0)
+      ]
+      addQuote(quote){
+        let quoteLength = this.quotes.length;
+        quote.id=quoteLength+1;
+        
+      
+        this.quotes.push(quote)
+       }
   
     
     
