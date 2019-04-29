@@ -7,6 +7,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 import { QuoteMadeComponent } from './quote-made/quote-made.component';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,11 @@ import { QuoteMadeComponent } from './quote-made/quote-made.component';
     
    
     
-    QuoteMadeComponent
+    QuoteMadeComponent,
+    
+   
+    
+    DatePipe
 
   ],
   imports: [

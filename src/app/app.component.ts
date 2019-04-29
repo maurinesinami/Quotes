@@ -8,7 +8,7 @@ import { Quote } from './quote'
 export class AppComponent {
   
 quotes=[
-  new Quote('starve your distractions,feed your focus','maurine','sinami',0,0)
+  new Quote('starve your distractions,feed your focus','maurine','sinami',0,0,new Date())
 ]
 addQuote(quote){
 
