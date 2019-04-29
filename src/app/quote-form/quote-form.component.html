@@ -10,7 +10,7 @@
       
 
   <div class="form-group">
-  <label for="quote">Quote</label>
+  <label for="quote">Quote:</label>
   <br> 
   
   <textarea type="text" class="form-control"[(ngModel)]="newQuote.quoteText"name="name"#name="ngModel" id="description" placeholder="Enter quote here" required></textarea>
@@ -23,7 +23,7 @@
   
     
  <div class="form-group">
-    <label for="author">Author</label>
+    <label for="author">Author:</label>
     <br> 
     <input type="text" class="form-control" id="author"placeholder="Name of author"[(ngModel)]="newQuote.author" name="author" #author="ngModel"required>
     <div [hidden]="quote.valid || quote.pristine" >
@@ -33,7 +33,7 @@
 
 </div>
 <div class="form-group">
-              <label for="name">Your Name</label>
+              <label for="name">Your Name:</label>
               <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" placeholder="name"[(ngModel)]="newQuote.name" name="name" #name="ngModel"required>
               <div [hidden]="name.valid || name.pristine" >
 </div>
