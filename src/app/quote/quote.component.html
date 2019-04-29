@@ -5,9 +5,9 @@
 
 <div class="card" style="width:100%">
   
+  
   <div class= "quote" *ngFor='let quote of quotes;let i =index'>
       
- 
    <p>{{quote.quoteText}}</p>
    <p>{{quote.author}}</p>
    <p>{{quote.name}}</p>
@@ -22,8 +22,11 @@
 
 
 
-</div>
-
+</div>  
+<h2>CREATE YOUR OWN QUOTE</h2>
 
 <app-quote-form (addQuote)='addQuote($event)'></app-quote-form>
+
+
+
 </div>

@@ -9,4 +9,17 @@ body{
 h1{
     text-align: center;
     color: antiquewhite;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 80px;
+
+}
+.card{
+    font-family: 'Special Elite', cursive;
+
+}
+h2{
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Cormorant Unicase', serif;
+
 }
